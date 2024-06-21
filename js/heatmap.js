@@ -1,4 +1,3 @@
-
 let map = L.map('map').setView([58.373523, 26.716045], 12)
 const osm =
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
@@ -8,6 +7,10 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 osm.addTo(map)
 
 
+// default map settings
+function defaultMapSettings() {
+ map.setView([58.373523, 26.716045], 12)
+}
 
 
 addGeoJson('geojson/tartu_city_celltowers_edu.geojson')
@@ -27,4 +30,3 @@ function heatDataConvert(feature) {
  feature.properties.area,
  ]
 }
-
