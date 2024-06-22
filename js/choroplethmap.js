@@ -15,7 +15,7 @@ async function addGeoJson(url) {
  L.choropleth(data, {
  valueProperty: 'OBJECTID',
  scale: ['#ffffff', '#ff9900'],
- steps: 2,
+ steps: 5,
  mode: 'q', // q for quantile, e for equidistant
  style: {
  color: '#fff',
